@@ -10,7 +10,7 @@
     
     <div id="app">
         <h3>10 Indirizzi Email Casuali:</h3>
-        <ol>
+        <ol v-if="randomMail.length == 10">
             <li v-for="(mail, index) in randomMail">{{randomMail[index]}}</li>
         </ol>
     </div>
